@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script type="module" src="./js/logIn.js" defer></script>
+
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/startPage.css">
+    <link rel="stylesheet" href="./css/logIn.css">
+    
+    
+    <!-- Fonts -->
+    <script src="https://morgan3d.github.io/include.js/include.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    
+    <title>LoginPage</title>
+</head>
+
+<body>
+    <header>
+        <div class="loggedInUser none"></div>
+            <nav class="containerHeader">
+                <div class="hamburgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="logo">
+                    <li class="logoHeader"><a href="./index.html"><img src="/assets/icons/logoCropped.png" alt="zmLogo"></a></li>
+                </div>
+        
+                <ul class="contactDiv">
+                    <li class="nav-item" id="menu">COLLECTION
+                    <i class="fas fa-angle-down"></i>
+                        <ul id="dropdown">
+                            <li><a class="nav-item" href="allProductsPage.html">ALL PRODUCTS</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-item" href="./index.html">ABOUT</a></li>
+                    <li><a class="nav-item" href="#socialMedia">CONTACT</a></li>
+                </ul>
+        
+                <div class="allIcons">
+                    <div class="qty"></div>
+                        <div class="icons">
+                            <li><a class="loginIcon" href="./login.html"><img src="/assets/icons/account.png" alt="account" id='accountIcon'></a></li>
+                            <li><a href="./cartPage.html"><img src="/assets/icons/shop-bag.png" alt="cartIcon" id='cartIcon'></a></li>                    
+                        
+                        <div class="adminIcons none">
+                            <li><a class="adminSetting" href="./myProfile.html"><img src="/assets/icons/admin.png" title="Admin settings" alt="adminIcon" id='adminIcon'></a></li>
+                            <li><a class="myOrders" href="./myProfile.html"><img src="/assets/icons/orders.png" title="Orders" alt="orderIcon" id='orderIcon'></a></li>
+                            <li><a class="logOut" href="./login.html"><img src="/assets/icons/logout.png" title="Log out" alt="logOutIcon" id='logOutIcon'></a></li>
+                        </div>
+                    </div>
+                </div>
+            </nav>  
+    </header>
+
+    <main>
+        <div class="accountContainer">
+            <form class="formDiv" id="login"> 
+                <h1 class="h1">Sign in</h1>
+                <div class="inputGroup">
+                    <input id="inputUserName" type="email" placeholder="example@example.se" name="Användarnamn" autofocus required>
+                </div>
+                <div class="inputGroup">
+                    <input id="inputPassword" type="password" placeholder="password" name="Lösenord" required>
+                </div>
+
+                <button class="button" type="submit">Sign in</button>
+                <p class="formText">
+                    <a class="noAccountLink" id="linkCreateAccount" href="#" >New customer? <strong>Create your account</strong> here.</a>
+                </p>
+            </form>
+            
+            <form name="registrationForm" class="formDiv hidden" id="createAccount">
+                <h1 class="h1">Create account</h1>
+                <div class="containerForms">
+                    <div class="registerBlock">
+                        <h2>Address</h2>
+                        <div class="inputGroup">
+                            <input id="firstname" type="text" placeholder="firstname" name="firstName" autofocus required>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="lastname" type="text" placeholder="lastname" name="lastName" required>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="street" type="text" placeholder="street" name="street" required>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="co" type="text" placeholder="CO (Not requried)" name="CO" >
+                        </div>
+                        <div class="inputGroup">
+                            <input id="zipcode" type="number" placeholder="zipcode" name="zipcode" required>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="city" type="text" placeholder="city" name="city" required>
+                        </div>
+                        <div class="inputGroup">
+                            <input id="country" type="text" placeholder="country" name="country" required>
+                        </div>
+                    </div>
+
+                    <div class="connectRegisterBlocks">
+
+                        <div class="registerBlockContact">
+                            <h2>Contact</h2>
+                            <div class="inputGroup">
+                                <input id="user" type="email" placeholder="example@example.se" name="email" required>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="countrycode" type="number" placeholder="country code e.g '46' " name="countrycode" required>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="mobilenumber" type="number" placeholder="mobile phone" name="mobileNumber" required>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="standardphone" type="number" placeholder="standard phone (Not required)" name="standardphone" >
+                            </div>
+                        </div>
+                        
+                        <div class="registerBlockPassword">
+                            <h2>Password</h2>
+                            <div class="inputGroup">
+                                <input id="pw" type="password" placeholder="password" name="password" required>
+                            </div>
+                            <div class="inputGroup">
+                                <input id="confirmpw" type="password" placeholder="confirm password" name="password" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="buttonCA" type="submit">Create account</button>
+                <p class="formText">
+                    <a class="noAccountLink" id="linkLogIn" href="#" >Already have an account? <strong>Sign in</strong> here</a>
+                </p><br><br>
+                <p class="formText">
+                    By continuing, you agree to Zeon Milo's <a href="#"><strong>Conditions of Use</strong></a> and <a href="#"><strong> Terms of Purchase</strong></a>
+                </p>
+            
+            </form>
+        </div>  
+    </main>
+    
+    <footer>
+        <div class="newsLetter">
+            <form action="./index.html" method="POST">
+                <div class="container">
+                  <h2 class="newsTitle">I Send Colourful Mail To Some Really Lovely People.</h2>
+                  <br>
+                  <p class="litleTitle">Want early previews of original paintings? Drop your email in the box below.</p>
+                </div>       
+                <div class="newsLetterContainer">
+                  <input id="firstNameNews" type="text" placeholder="Name" name="firstNameNews" required>
+                  <input id="emailNews" type="text" placeholder="Email address" name="emailNews" required>
+                  <input id= "submitClick" type="submit" value="Sign me up!">
+                </div>
+            </form>
+        </div>
+        <div class="footerDiv">
+            <div class="contactInfo hidden" id='contact'> 
+                <h3 class="some">Contact</h3><br>
+                <a class="contactIcon" href="mailto:ZM@gmail.com">Zeon@Milo.com</a>
+            </div>
+            <div class="logoFooter">
+                <a href="./index.html"><img src="/assets/icons/logoCropped.png" alt="logo"></a>
+            </div>
+            <div class="socialMedia" id="socialMedia"> 
+                <h3 class="some hidden">Social media</h3><br>
+                <a class="fab fa-instagram-square" target="_blank" href="https://www.instagram.com/"></a>
+                <a class="fab fa-facebook-square" target="_blank" href="https://www.facebook.com/"></a>
+                <a class="fab fa-twitter-square" target="_blank" href="https://twitter.com/?lang=sv"></a>
+            </div> 
+        </div>
+            <div class="copy">
+                <sup>All images and site content &copy; Zeon Milo, 2022</sup>
+            </div>
+    </footer>
+    
+    
+
+</body>
+</html>

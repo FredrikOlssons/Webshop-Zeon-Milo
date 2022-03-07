@@ -1,0 +1,440 @@
+
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 110px;
+    min-height: 100vh;
+
+}
+
+.cartContainer {
+    padding-left: 120px;
+    padding-right: 50px;
+}
+
+.itemContainer {
+    display: flex;
+    width: 650px;
+    border-bottom: 1px solid darkgray;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+}
+
+.cartItemImage {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 13px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 380px;
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+
+
+.priceContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 50px;
+}
+
+.summaryContainer {
+    height: 600px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 120px;
+    padding-left: 50px;
+    border-left: 1px solid rgb(183, 189, 194);
+}
+
+.radioButton {
+    margin: 10px;
+}
+
+.newsButton {
+    margin-top: 20px;
+    margin-right:5px;
+}
+
+.totalAmount {
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.totalpriceItem {
+    font-weight: 600;
+    padding-top: 5px;
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+.ajustQty {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;                          
+    gap: 15px;                                  
+}
+
+.removeProduct {
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    display: flex; 
+    cursor: pointer;
+}
+
+.ajustBoxes {
+    width: 40px;                                
+    height: 40px;                                
+    font-size: 20px;                              
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid rgb(233, 232, 232);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: black;
+    cursor: pointer; 
+}
+
+.ajustBoxes:hover {
+    border: 2px solid rgb(233, 232, 232);   
+}
+
+.ajustBoxes:active {
+    transform: scale(0.95);
+}
+
+.noClick {
+    pointer-events: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    
+}
+
+.myTitle {
+    margin-bottom: 50px;
+}
+
+ .addressContainer {
+    margin-bottom: 60px;
+ } 
+
+input {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+.orderButton {
+    align-items: center;
+    appearance: none;
+    background-color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    color: #3c4043;
+    cursor: pointer;
+    display: inline-flex;
+    fill: currentcolor;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .25px;
+    line-height: normal;
+    max-width: 100%;
+    overflow: visible;
+    padding: 2px 24px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: auto;
+    will-change: transform,opacity;
+    z-index: 0;
+    width: 140px;
+    margin-top: 20px;
+  }
+  
+  
+  .orderButton:hover {
+    background: #F6F9FE;
+    color: #174ea6;
+  }
+  
+  .orderButton:active {
+    box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+    outline: none;
+  }
+  
+  .orderButton:focus{
+    outline: none;
+    border: 2px solid #4285f4;
+  }
+  
+  .orderButton:not(:disabled), .orderButton:not(:disabled) {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .orderButton:not(:disabled):hover {
+    box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+  }
+  
+  .orderButton:not(:disabled):focus {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+  
+  .orderButton:not(:disabled):active {
+    box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+  }
+  
+  .orderButton:disabled {
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+  }
+
+  footer {
+      position: relative;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+  }
+
+  .none {
+    display: none;
+}
+
+@media screen and (max-width: 1350px) {
+
+main {
+    margin-top: 90px;
+}
+
+.cartContainer {
+    padding-left: 90px;
+}
+
+.summaryContainer {
+    padding-right: 90px;
+}
+
+.itemContainer {
+    width: 610px;
+}
+
+.priceContainer {
+    gap: 20px;
+    min-width: 250px;
+}
+
+.addressContainer {
+    margin-bottom: 40px;
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    main {
+        margin-top: 80px;
+    }
+    
+    .cartContainer {
+        padding-left: 60px;
+    }
+    
+    .summaryContainer {
+        padding-right: 60px;
+    }
+    
+    .priceContainer {
+        gap: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 1100px) {
+
+main {
+    flex-wrap: wrap;
+    height: auto;
+} 
+
+.cartContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.itemContainer {
+    width: 80vw;
+}
+
+.infoContainer {
+    min-width: 150px;
+    overflow: hidden;
+}
+
+.priceContainer {
+    min-width: 200px;
+    width: 400px;
+    justify-content: space-around;
+}
+
+.summaryContainer {
+    margin-right: 40px;
+    margin-top: 0px;
+    width: 100%;
+    min-width: 320px;
+}
+
+.checkOutContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.totalAmount {
+    margin: 20px;
+}
+
+.orderButton {
+    margin: 20px;
+}
+
+.ajustBoxes {
+    width: 30px;
+    height: 30px;
+}
+
+    
+    }
+
+@media screen and (max-width: 600px) {
+
+.infoContainer {
+    min-width: 100px;
+}
+  
+.checkOutContainer {
+    align-items: center;
+}
+
+.orderButton {
+    width: 90%;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+    main {
+        margin-top: 50px;
+    }
+
+    .ajustQty {
+        gap: 7px;
+    }
+
+    .ajustBoxes {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cartContainer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .itemContainer {
+        width: 320px;
+    }
+
+    .summaryContainer {
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-right:0px;
+    }
+
+    .priceContainer {
+        min-width: 120px;
+        
+    }
+
+    .totalpriceItem {
+        padding-top: 5px;
+    }
+    
+}
+
+    @media screen and (max-width: 350px) {
+
+        .itemContainer {
+            width: auto;
+        }
+
+        .infoContainer {
+            min-width: auto;
+        }
+
+        .summaryContainer {
+            min-width: unset;
+           
+        }
+    
+    }
+
+        @media screen and (max-width: 320px) {
+
+        .cartItemImage{
+            width: 70px;
+            height: 70px;
+        }
+
+        .ajustQty p {
+            font-size: 12px;
+        }
+                
+    }
+
+        @media screen and (max-width: 300px) {
+
+        .cartItemImage{
+            width: 60px;
+            height: 60px;
+        }
+    
+        .ajustQty p {
+            font-size: 12px;
+        }
+                        
+    }

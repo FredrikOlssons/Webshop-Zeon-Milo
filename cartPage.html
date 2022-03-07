@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="./js/cart.js" defer></script>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/cartPage.css">
+    
+    <!-- Fonts -->
+    <script src="https://morgan3d.github.io/include.js/include.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="loggedInUser none"></div>
+            <nav class="containerHeader">
+                <div class="hamburgerMenu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="logo">
+                    <li class="logoHeader"><a href="./index.html"><img src="/assets/icons/logoCropped.png" alt="zmLogo"></a></li>
+                </div>
+        
+                <ul class="contactDiv">
+                    <li class="nav-item" id="menu">COLLECTION
+                    <i class="fas fa-angle-down"></i>
+                        <ul id="dropdown">
+                            <li><a class="nav-item" href="allProductsPage.html">All products</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-item" href="./index.html">ABOUT</a></li>
+                    <li><a class="nav-item" href="#socialMedia">CONTACT</a></li>
+                </ul>
+        
+                <div class="allIcons">
+                    <div class="qty"></div>
+                        <div class="icons">
+                            <li><a class="loginIcon" href="./login.html"><img src="/assets/icons/account.png" alt="account" id='accountIcon'></a></li>
+                            <li><a href="./cartPage.html"><img src="/assets/icons/shop-bag.png" alt="cartIcon" id='cartIcon'></a></li>                    
+                        
+                        <div class="adminIcons none">
+                            <li><a class="adminSetting" href="./myProfile.html"><img src="/assets/icons/admin.png" title="Admin settings" alt="adminIcon" id='adminIcon'></a></li>
+                            <li><a class="myOrders" href="./myProfile.html"><img src="/assets/icons/orders.png" title="Orders" alt="orderIcon" id='orderIcon'></a></li>
+                            <li><a class="logOut" href="./login.html"><img src="/assets/icons/logout.png" title="Log out" alt="logOutIcon" id='logOutIcon'></a></li>
+                        </div>
+                    </div>
+                </div>
+            </nav>  
+    </header>
+
+    <main>
+     
+
+    </main>
+    <footer>
+        <div class="footerDiv">
+            <div class="contactInfo hidden" id='contact'> 
+                <h3 class="some">Contact</h3><br>
+                <a class="contactIcon" href="mailto:ZM@gmail.com">Zeon@Milo.com</a>
+            </div>
+            <div class="logoFooter">
+                <a href="./index.html"><img src="/assets/icons/logoCropped.png" alt="logo"></a>
+            </div>
+            <div class="socialMedia" id="socialMedia"> 
+                <h3 class="some hidden">Social media</h3><br>
+                <a class="fab fa-instagram-square" target="_blank" href="https://www.instagram.com/"></a>
+                <a class="fab fa-facebook-square" target="_blank" href="https://www.facebook.com/"></a>
+                <a class="fab fa-twitter-square" target="_blank" href="https://twitter.com/?lang=sv"></a>
+            </div> 
+        </div>
+            <div class="copy">
+                <sup>All images and site content &copy; Zeon Milo, 2022</sup>
+            </div>
+    </footer>
+
+</body>
+</html>
